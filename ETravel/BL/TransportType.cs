@@ -1,6 +1,6 @@
 ﻿namespace ETravel.Buisness
 {
-    interface ITransportType
+    enum TransportType
     {
     }
 }

@@ -40,25 +40,28 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Buisness\ILink.cs" />
-    <Compile Include="Buisness\IMap.cs" />
-    <Compile Include="Buisness\IMapOptimiser.cs" />
-    <Compile Include="Buisness\INode.cs" />
-    <Compile Include="Buisness\IResult.cs" />
-    <Compile Include="Buisness\ITransportType.cs" />
-    <Compile Include="Buisness\IWalker.cs" />
-    <Compile Include="Buisness\IWay.cs" />
-    <Compile Include="Buisness\Map.cs" />
-    <Compile Include="Buisness\MapOptimiser.cs" />
-    <Compile Include="Buisness\Node.cs" />
-    <Compile Include="Buisness\Walker.cs" />
-    <Compile Include="Buisness\Way.cs" />
-    <Compile Include="DataRepresentation\IMapDataConnector.cs" />
+    <Compile Include="BL\ILink.cs" />
+    <Compile Include="BL\IMap.cs" />
+    <Compile Include="BL\IMapOptimiser.cs" />
+    <Compile Include="BL\INode.cs" />
+    <Compile Include="BL\IResult.cs" />
+    <Compile Include="BL\TransportType.cs" />
+    <Compile Include="BL\IWalker.cs" />
+    <Compile Include="BL\IWay.cs" />
+    <Compile Include="BL\Map\BasicMap.cs" />
+    <Compile Include="BL\MapOptimiser.cs" />
+    <Compile Include="BL\Node\ConnectiveNode.cs" />
+    <Compile Include="BL\Walker.cs" />
+    <Compile Include="BL\Way.cs" />
+    <Compile Include="DAL\IMapDataConnector.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UIRepresentation\IDataRepresentator.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="ClassDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="BL\Walker\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

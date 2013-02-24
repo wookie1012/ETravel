@@ -6,12 +6,14 @@ namespace ETravel.Buisness
 {
     interface IWay : IEnumerable, IComparable 
     {
-        ILink First { get; set; }
-        ILink Last { get; set; }
+        ILink FirstNode { get; set; }
+        ILink LastNode { get; set; }
 
         ILink Current { get; set; }
 
         ILink MoveNext();
+        ILink MoveForward();
+        int SetCurrentNode(INode node);
 
     }
 }
